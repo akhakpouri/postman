@@ -1,7 +1,6 @@
 using Microsoft.Extensions.Logging;
-using Sontiq.Queue.PubSub.Business.Commands;
 
-namespace Sontiq.Queue.PubSub.Business.Services;
+namespace Postman.PubSub.Business.Services;
 
 public class FooService : IFooService
 {

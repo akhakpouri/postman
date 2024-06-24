@@ -1,10 +1,10 @@
 ﻿using ConcurrentCollections;
 using Microsoft.Extensions.Logging;
+using Postman.Codecs;
+using Postman.Extensions;
 using RabbitMQ.Client;
-using Sontiq.Queue.Codecs;
-using Sontiq.Queue.Extensions;
 
-namespace Sontiq.Queue.RabbitMq
+namespace Postman.RabbitMq
 {
     public class RabbitMessageQueuePublisher : QueuePublisherBase<RabbitConfig>
     {

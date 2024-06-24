@@ -1,7 +1,7 @@
-using Sontiq.Queue.PubSub.Business.Commands;
-using Sontiq.Queue.PubSub.Business.Dto;
+using Postman.PubSub.Business.Commands;
+using Postman.PubSub.Business.Dto;
 
-namespace Sontiq.Queue.PubSub.Business.Managers;
+namespace Postman.PubSub.Business.Managers;
 
 public class FooManager : IManager<FooDto>
 {

@@ -1,4 +1,4 @@
-﻿namespace Sontiq.Queue
+﻿namespace Postman
 {
     /// <summary>
     /// Queue listener interface. Listeners are able to subscribe callbacks for concrete events.

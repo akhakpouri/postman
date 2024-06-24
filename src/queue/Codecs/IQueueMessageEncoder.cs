@@ -1,4 +1,4 @@
-﻿namespace Sontiq.Queue.Codecs
+﻿namespace Postman.Codecs
 {
     /// <summary>
     /// Interface for classes that are responsible for encoding queue message objects into byte streams or arrays.

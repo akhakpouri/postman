@@ -1,25 +1,15 @@
 ﻿using Microsoft.Extensions.Logging;
-using Sontiq.Queue.PubSub.Business;
-using Sontiq.Queue.PubSub.Business.Dto;
+using Postman.PubSub.Business;
+using Postman.PubSub.Business.Dto;
 
-namespace Sontiq.Queue.Pub
+namespace Postman.Pub
 {
-    public class Hello : IHello
+    public class Hello(
+        IManager<UserConfirmDto> userManager,
+        IManager<FooDto> fooManager,
+        ILogger<Hello> logger)
+        : IHello
     {
-        readonly IManager<UserConfirmDto> _userManager;
-        private readonly IManager<FooDto> _fooManager;
-        readonly ILogger _logger;
-
-        public Hello(
-            IManager<UserConfirmDto> userManager,
-            IManager<FooDto> fooManager,
-            ILogger<Hello> logger)
-        {
-            _userManager = userManager;
-            _fooManager = fooManager;
-            _logger = logger;
-        }
-
         public async Task Say()
         {
             Console.WriteLine("Welcome! We're going to begin work!");
@@ -45,7 +35,7 @@ namespace Sontiq.Queue.Pub
                 Console.WriteLine("What is the email?");
                 var email = Console.ReadLine();
                 var dto = new UserConfirmDto { Id = userId, Email = email ?? string.Empty };
-                await _userManager.Process(dto);
+                await userManager.Process(dto);
             }
             else if (choice == 2)
             {
@@ -55,7 +45,7 @@ namespace Sontiq.Queue.Pub
                 Console.WriteLine("What is the name?");
                 var name = Console.ReadLine();
                 var dto = new FooDto() { Id = fooId, Name = name ?? string.Empty };
-                await _fooManager.Process(dto);
+                await fooManager.Process(dto);
             }
         }
     }

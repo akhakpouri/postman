@@ -2,12 +2,12 @@
 using Microsoft.Extensions.Logging;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
-using Sontiq.Queue.Codecs;
-using Sontiq.Queue.Exceptions;
-using Sontiq.Queue.Extensions;
+using Postman.Codecs;
+using Postman.Exceptions;
+using Postman.Extensions;
 using System.Collections.Concurrent;
 
-namespace Sontiq.Queue.RabbitMq
+namespace Postman.RabbitMq
 {
     public class RabbitMessageQueueListener : QueueListenerBase<RabbitConfig>
     {

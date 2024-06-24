@@ -1,4 +1,4 @@
-﻿namespace Sontiq.Queue
+﻿namespace Postman
 {
     public interface IQueueMessage
     {

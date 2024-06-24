@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "queue", "queue", "{9FA6296A-25B3-48ED-A071-DD98AED4EBFF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pub-sub", "pub-sub", "{4FE4AB5F-06CD-41EF-855D-4F78DFF9EA6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Postman", "src\queue\Postman.csproj", "{2ECA71C3-DD0A-4047-ACEF-9BE688ACACFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Postman.Pub", "src\pub-sub\Postman.Pub\Postman.Pub.csproj", "{736F9ED3-0EC3-4D34-994E-66459146F5D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Postman.PubSub.Business", "src\pub-sub\Postman.PubSub.Business\Postman.PubSub.Business.csproj", "{69E86DF1-7D27-484A-BF5F-F8F964E76C9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Postman.Sub", "src\pub-sub\Postman.Sub\Postman.Sub.csproj", "{61413D8D-6F44-483D-9752-ADE63B23381D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2ECA71C3-DD0A-4047-ACEF-9BE688ACACFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ECA71C3-DD0A-4047-ACEF-9BE688ACACFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ECA71C3-DD0A-4047-ACEF-9BE688ACACFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ECA71C3-DD0A-4047-ACEF-9BE688ACACFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{736F9ED3-0EC3-4D34-994E-66459146F5D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{736F9ED3-0EC3-4D34-994E-66459146F5D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{736F9ED3-0EC3-4D34-994E-66459146F5D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{736F9ED3-0EC3-4D34-994E-66459146F5D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69E86DF1-7D27-484A-BF5F-F8F964E76C9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69E86DF1-7D27-484A-BF5F-F8F964E76C9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69E86DF1-7D27-484A-BF5F-F8F964E76C9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69E86DF1-7D27-484A-BF5F-F8F964E76C9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61413D8D-6F44-483D-9752-ADE63B23381D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61413D8D-6F44-483D-9752-ADE63B23381D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61413D8D-6F44-483D-9752-ADE63B23381D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61413D8D-6F44-483D-9752-ADE63B23381D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2ECA71C3-DD0A-4047-ACEF-9BE688ACACFB} = {9FA6296A-25B3-48ED-A071-DD98AED4EBFF}
+		{736F9ED3-0EC3-4D34-994E-66459146F5D1} = {4FE4AB5F-06CD-41EF-855D-4F78DFF9EA6D}
+		{69E86DF1-7D27-484A-BF5F-F8F964E76C9B} = {4FE4AB5F-06CD-41EF-855D-4F78DFF9EA6D}
+		{61413D8D-6F44-483D-9752-ADE63B23381D} = {4FE4AB5F-06CD-41EF-855D-4F78DFF9EA6D}
+	EndGlobalSection
+EndGlobal

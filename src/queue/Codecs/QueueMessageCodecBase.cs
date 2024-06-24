@@ -1,4 +1,6 @@
-﻿using Sontiq.Queue.Helpers;
+﻿using Postman;
+using Postman.Codecs;
+using Postman.Helpers;
 
 namespace Sontiq.Queue.Codecs
 {

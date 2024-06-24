@@ -1,15 +1,10 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace Sontiq.Queue.PubSub.Business.Services
+namespace Postman.PubSub.Business.Services
 {
-    public class UserService : IUserService
+    public class UserService(ILogger<UserService> logger) : IUserService
     {
-        readonly ILogger _logger;
-
-        public UserService(ILogger<UserService> logger)
-        {
-            _logger = logger;
-        }
+        readonly ILogger _logger = logger;
 
         public void Confirm(int id, string email, Guid guid)
         {

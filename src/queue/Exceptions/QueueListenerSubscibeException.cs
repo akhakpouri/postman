@@ -1,16 +1,15 @@
 ﻿using System.Runtime.Serialization;
 
-namespace Sontiq.Queue.Exceptions
+namespace Postman.Exceptions;
+
+[Serializable]
+public class QueueListenerSubscibeException : Exception
 {
-    [Serializable]
-    public class QueueListenerSubscibeException : Exception
-    {
-        public QueueListenerSubscibeException() { }
+    public QueueListenerSubscibeException() { }
 
-        public QueueListenerSubscibeException(string message) : base(message) { }
+    public QueueListenerSubscibeException(string message) : base(message) { }
 
-        public QueueListenerSubscibeException(string message, Exception innerException) : base(message, innerException) { }
+    public QueueListenerSubscibeException(string message, Exception innerException) : base(message, innerException) { }
 
-        protected QueueListenerSubscibeException(SerializationInfo info, StreamingContext context) : base(info, context) { }
-    }
+    protected QueueListenerSubscibeException(SerializationInfo info, StreamingContext context) : base(info, context) { }
 }

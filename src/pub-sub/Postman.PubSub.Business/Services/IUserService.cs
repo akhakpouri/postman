@@ -1,4 +1,4 @@
-﻿namespace Sontiq.Queue.PubSub.Business.Services
+﻿namespace Postman.PubSub.Business.Services
 {
     public interface IUserService
     {

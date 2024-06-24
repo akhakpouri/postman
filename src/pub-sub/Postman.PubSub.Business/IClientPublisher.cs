@@ -1,4 +1,4 @@
-﻿namespace Sontiq.Queue.PubSub.Business
+﻿namespace Postman.PubSub.Business
 {
     public interface IClientPublisher<TMessage> where TMessage : QueueMessage
     {

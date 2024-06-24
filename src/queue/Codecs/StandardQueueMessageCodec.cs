@@ -1,8 +1,10 @@
-﻿using Sontiq.Queue.Exceptions;
-using Sontiq.Queue.Helpers;
+﻿using Postman.Exceptions;
+using Postman.Helpers;
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using Postman;
+using Postman.Codecs;
 
 namespace Sontiq.Queue.Codecs
 {

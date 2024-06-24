@@ -1,8 +1,8 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Sontiq.Queue.RabbitMq;
+using Postman.RabbitMq;
 
-namespace Sontiq.Queue.Extensions;
+namespace Postman.Extensions;
 
 public static class ServiceCollectionExtension
 {

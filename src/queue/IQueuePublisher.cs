@@ -1,4 +1,4 @@
-﻿namespace Sontiq.Queue
+﻿namespace Postman
 {
     /// <summary>
     /// Interface for queue publishers. Publishers are responsible for sending message to the messageing queue.

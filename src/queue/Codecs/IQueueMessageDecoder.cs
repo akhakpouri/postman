@@ -1,4 +1,4 @@
-﻿namespace Sontiq.Queue.Codecs
+﻿namespace Postman.Codecs
 {
     /// <summary>
     /// Interface for classes that are responsible for decoding messages from the queue into concrete objects.

@@ -1,4 +1,4 @@
-﻿namespace Sontiq.Queue.Pub
+﻿namespace Postman.Pub
 {
     public interface IHello
     {

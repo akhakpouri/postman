@@ -1,8 +1,7 @@
-﻿namespace Sontiq.Queue
+﻿namespace Postman;
+
+public class QueueMessage : IQueueMessage
 {
-    public class QueueMessage : IQueueMessage
-    {
-        public Guid Id => Guid.NewGuid();
-        public DateTimeOffset Timestamp => DateTimeOffset.Now;
-    }
+    public Guid Id => Guid.NewGuid();
+    public DateTimeOffset Timestamp => DateTimeOffset.Now;
 }

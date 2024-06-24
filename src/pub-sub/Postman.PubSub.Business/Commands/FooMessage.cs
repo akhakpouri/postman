@@ -1,4 +1,4 @@
-﻿namespace Sontiq.Queue.PubSub.Business.Commands
+﻿namespace Postman.PubSub.Business.Commands
 {
     public class FooMessage : QueueMessage
     {

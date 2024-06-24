@@ -1,9 +1,8 @@
 ﻿using Microsoft.Extensions.Hosting;
 
-namespace Sontiq.Queue
+namespace Postman;
+
+public abstract class HostedServiceBase : BackgroundService
 {
-    public abstract class HostedServiceBase : BackgroundService
-    {
-        public override abstract Task StopAsync(CancellationToken cancellationToken);
-    }
+    public override abstract Task StopAsync(CancellationToken cancellationToken);
 }

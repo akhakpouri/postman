@@ -1,10 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
 
     <PropertyGroup>
-        <TargetFramework>net6.0</TargetFramework>
+        <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <ErrorOnDuplicatePublishOutputFiles>false</ErrorOnDuplicatePublishOutputFiles>
+        <LangVersion>default</LangVersion>
     </PropertyGroup>
 
     <ItemGroup>
@@ -20,7 +21,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Sontiq.Queue.PubSub.Business\Sontiq.Queue.PubSub.Business.csproj"/>
+      <ProjectReference Include="..\Postman.PubSub.Business\Postman.PubSub.Business.csproj" />
     </ItemGroup>
 
 </Project>

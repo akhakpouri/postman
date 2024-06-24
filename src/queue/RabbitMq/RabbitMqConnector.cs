@@ -1,6 +1,6 @@
 ﻿using RabbitMQ.Client;
 
-namespace Sontiq.Queue.RabbitMq
+namespace Postman.RabbitMq
 {
     /// <summary>
     /// Helper connector class to be used by both <seealso cref="RabbitMessageQueueListener"/> and <seealso cref="RabbitMessageQueuePublisher"/>.

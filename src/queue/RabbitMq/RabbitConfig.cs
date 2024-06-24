@@ -1,4 +1,4 @@
-﻿namespace Sontiq.Queue.RabbitMq
+﻿namespace Postman.RabbitMq
 {
     public class RabbitConfig
     {

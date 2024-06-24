@@ -1,13 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Console;
 using Microsoft.Extensions.Logging.Debug;
-using Sontiq.Queue.Extensions;
-using Sontiq.Queue.Pub;
-using Sontiq.Queue.PubSub.Business;
+using Postman.Extensions;
+using Postman.Pub;
+using Postman.PubSub.Business;
 
 var services = new ServiceCollection();
 

@@ -1,4 +1,4 @@
-﻿namespace Sontiq.Queue.RabbitMq
+﻿namespace Postman.RabbitMq
 {
     /// <summary>
     /// Interface for classes that resolves routing for given input messages.

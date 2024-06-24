@@ -1,4 +1,4 @@
-﻿namespace Sontiq.Queue.PubSub.Business.Dto
+﻿namespace Postman.PubSub.Business.Dto
 {
     public class UserConfirmDto : BaseDto
     {

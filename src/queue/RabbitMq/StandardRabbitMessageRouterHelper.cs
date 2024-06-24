@@ -1,7 +1,7 @@
-﻿using Sontiq.Queue.Helpers;
-using System.Reflection;
+﻿using System.Reflection;
+using Postman.Helpers;
 
-namespace Sontiq.Queue.RabbitMq
+namespace Postman.RabbitMq
 {
     // <summary>
     /// <para>Standard router helper that setups routes for each event</para>

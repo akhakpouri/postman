@@ -2,11 +2,8 @@
 
 using Microsoft.Extensions.Logging.Console;
 using Microsoft.Extensions.Logging.Debug;
-using Sontiq.Queue.Extensions;
-using Sontiq.Queue.PubSub.Business;
-
-var services = new ServiceCollection();
-
+using Postman.Extensions;
+using Postman.PubSub.Business;
 
 static IHostBuilder CreateHostBuilder(string[] args) =>
     Host.CreateDefaultBuilder(args)

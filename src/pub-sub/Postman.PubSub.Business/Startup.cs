@@ -1,12 +1,11 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Sontiq.Queue.Business.PubSub.Publishers;
-using Sontiq.Queue.PubSub.Business.Dto;
-using Sontiq.Queue.PubSub.Business.Managers;
-using Sontiq.Queue.PubSub.Business.Publishers;
-using Sontiq.Queue.PubSub.Business.Services;
-using Sontiq.Queue.PubSub.Business.Services.Hosted;
+using Postman.PubSub.Business.Dto;
+using Postman.PubSub.Business.Managers;
+using Postman.PubSub.Business.Publishers;
+using Postman.PubSub.Business.Services;
+using Postman.PubSub.Business.Services.Hosted;
 
-namespace Sontiq.Queue.PubSub.Business
+namespace Postman.PubSub.Business
 {
     public static class Startup
     {

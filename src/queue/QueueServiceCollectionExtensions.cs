@@ -1,40 +1,41 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace Sontiq.Queue
+namespace Postman;
+
+/// <summary>
+/// Dependency injection extensions for registering generic queue listeners and publishers
+/// </summary>
+internal static class QueueServiceCollectionExtensions
 {
-    /// <summary>
-    /// Dependency injection extensions for registering generic queue listeners and publishers
-    /// </summary>
-    internal static class QueueServiceCollectionExtensions
+    public static IServiceCollection AddQueueListener<TListener, TConfig>(this IServiceCollection serviceCollection,
+        TConfig config, string name = "")
+        where TListener : class, IQueueListener<TConfig>
     {
-        public static IServiceCollection AddQueueListener<TListener, TConfig>(this IServiceCollection serviceCollection, TConfig config, string name = "")
-            where TListener : class, IQueueListener<TConfig>
+        serviceCollection.AddSingleton<TListener>();
+        serviceCollection.AddSingleton(typeof(IQueueListener), serviceProvider =>
         {
-            serviceCollection.AddSingleton<TListener>();
-            serviceCollection.AddSingleton(typeof(IQueueListener), serviceProvider =>
-            {
-                var publisher = serviceProvider.GetRequiredService<TListener>();
-                publisher.Connect(config, name);
+            var publisher = serviceProvider.GetRequiredService<TListener>();
+            publisher.Connect(config, name);
 
-                return publisher;
-            });
+            return publisher;
+        });
 
-            return serviceCollection;
-        }
+        return serviceCollection;
+    }
 
-        public static IServiceCollection AddQueuePublisher<TPublisher, TConfig>(this IServiceCollection serviceCollection, TConfig config)
-            where TPublisher : class, IQueuePublisher<TConfig>
+    public static IServiceCollection AddQueuePublisher<TPublisher, TConfig>(this IServiceCollection serviceCollection,
+        TConfig config)
+        where TPublisher : class, IQueuePublisher<TConfig>
+    {
+        serviceCollection.AddSingleton<TPublisher>();
+        serviceCollection.AddSingleton(typeof(IQueuePublisher), serviceProvider =>
         {
-            serviceCollection.AddSingleton<TPublisher>();
-            serviceCollection.AddSingleton(typeof(IQueuePublisher), serviceProvider =>
-            {
-                var publisher = serviceProvider.GetRequiredService<TPublisher>();
-                publisher.Connect(config);
+            var publisher = serviceProvider.GetRequiredService<TPublisher>();
+            publisher.Connect(config);
 
-                return publisher;
-            });
+            return publisher;
+        });
 
-            return serviceCollection;
-        }
+        return serviceCollection;
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace Sontiq.Queue.Exceptions
+namespace Postman.Exceptions
 {
     [Serializable]
     public class QueueMessageProcessingException : Exception

@@ -1,8 +1,8 @@
-﻿using Sontiq.Queue.PubSub.Business.Dto;
+﻿using Postman.PubSub.Business.Dto;
 
-namespace Sontiq.Queue.PubSub.Business
+namespace Postman.PubSub.Business
 {
-    public interface IManager<T> where T : BaseDto
+    public interface IManager<in T> where T : BaseDto
     {
         Task Process(T dto);
     }

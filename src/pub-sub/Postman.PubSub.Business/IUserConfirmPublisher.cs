@@ -1,6 +1,5 @@
-﻿using Sontiq.Queue.PubSub.Business.Commands;
+﻿using Postman.PubSub.Business.Commands;
 
-namespace Sontiq.Queue.PubSub.Business
-{
-    public interface IUserConfirmPublisher : IClientPublisher<UserConfirmMessage> { }
-}
+namespace Postman.PubSub.Business;
+
+public interface IUserConfirmPublisher : IClientPublisher<UserConfirmMessage> { }
