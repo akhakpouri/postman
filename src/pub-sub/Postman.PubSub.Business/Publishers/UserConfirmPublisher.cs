@@ -15,7 +15,7 @@ namespace Postman.PubSub.Business.Publishers
             _logger.LogInformation("About to start publishing the foo message");
             await publisher.Publish(message);
             _logger.LogInformation(
-                $"Sent the confimation message with id {message.Id} & user-id {message.Id} & email: {message.Email}");
+                $"Sent the confirmation message with id {message.Id} & user-id {message.Id} & email: {message.Email}");
         }
     }
 }
