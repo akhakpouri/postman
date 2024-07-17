@@ -1,0 +1,22 @@
+name: dotnet build & test
+
+on:
+  push:
+    branches:
+      - main
+      - "task/issue-**"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: build & test
+    steps:
+      - uses: actions/checkout@v3
+      - name: setup dotnet
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: "8.0.x"
+      - name: restore nuget packages
+        run: dotnet restore src/queue/Postman.csproj
+      - name: build solution
+        run: dotnet build src/Postman.sln -- configuration Release
