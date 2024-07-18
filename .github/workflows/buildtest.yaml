@@ -19,4 +19,4 @@ jobs:
       - name: restore nuget packages
         run: dotnet restore src/queue/Postman.csproj
       - name: build solution
-        run: dotnet build src/Postman.sln -- configuration Release
+        run: dotnet build src/queue/Postman.csproj -- configuration Release
