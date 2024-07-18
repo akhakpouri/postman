@@ -5,6 +5,9 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <LangVersion>latestmajor</LangVersion>
+        <Authors>Ali Khakpouri</Authors>
+        <Copyright>@copy; 2024</Copyright>
+        <PackageProjectUrl>khakpouri.net</PackageProjectUrl>
     </PropertyGroup>
 
     <ItemGroup>

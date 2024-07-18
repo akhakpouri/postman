@@ -17,6 +17,6 @@ jobs:
         with:
           dotnet-version: "8.0.x"
       - name: restore nuget packages
-        run: dotnet restore src/queue/Postman.csproj
+        run: dotnet restore Postman.sln
       - name: build solution
-        run: dotnet build src/queue/Postman.csproj -- configuration Release
+        run: dotnet build  --configuration Release src/queue/Postman.csproj
